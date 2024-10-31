@@ -13,8 +13,14 @@ const Contact = () => {
             <H1>Contact Us</H1>
         </Div>
 
-        <Paragraph>Should you have any questions or concerns, please use one of the following methods below to reach out to us:</Paragraph>
+        <TextContainer>
+            <TextInfo>
+        <Paragraph>Should you have any questions or concerns, please use one of the following methods below to reach out to us. An administrative member of our team will then assist you to the best of their abilities to answer your question or to help you with your request.
+        </Paragraph>
+            </TextInfo>
+        </TextContainer>
         <br/>
+
         <ContactInfo>
             <InfoContainer>
             <ul>
@@ -27,9 +33,6 @@ const Contact = () => {
             </ul>
             </InfoContainer>
         </ContactInfo>
-
-            <br/>
-            <Paragraph>An administrative member of our team will then assist you to the best of their abilities to answer your question or to help you with your request.</Paragraph>
             <br/>
 
             <BtnDiv>
@@ -44,7 +47,7 @@ const Contact = () => {
 
 const H1 = styled.h1`
 text-align: center;
-    text-decoration: underline;
+font-weight: bold;
 `
 
 const Div = styled.div`
@@ -72,6 +75,27 @@ const InfoContainer = styled.div`
     padding: 15px;
     line-height: 2em;
     font-size: 1.2em;
+`
+
+const TextContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    border-color: black;
+    border-radius: 10px;
+`
+
+const TextInfo = styled.div`
+    border-color: black;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px 0 #1d4ed8;
+    background-color: #CFD3DD;
+    color: black;
+    width: max-content;
+    padding: 15px;
+    line-height: 2em;
+    font-size: 1.1em;
 `
 
 const Li = styled.li`

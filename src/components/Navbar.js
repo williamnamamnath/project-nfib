@@ -25,7 +25,16 @@ const Navbar = () => {
                     <NavLink to="/about-nfib" className="nav-link">What is NFIB?</NavLink>
                 </Li>
                 <Li>
-                    <NavLink to="/contact" className="nav-link">Contact</NavLink>
+                    <NavLink to="/projects" className="nav-link">Our Projects</NavLink>
+                </Li>
+                <Li>
+                    <NavLink to="/news-and-events" className="nav-link">News and Events</NavLink>
+                </Li>
+                <Li>
+                    <NavLink to="/nf1-team" className="nav-link">Our Team</NavLink>
+                </Li>
+                <Li>
+                    <NavLink to="/contact" className="nav-link">Contact and Resources</NavLink>
                 </Li>
             </ul>
         </Nav>
@@ -42,8 +51,8 @@ const Nav = styled.nav`
     align-items: center;
     position: sticky;
     top: 0;
-    background-color: #0f172a;
-    box-shadow: 0px 3px 3px gray;
+    background-color: #245BDE;
+    box-shadow: 0px 3px 3px #2048A8;
 
     @media all and (min-width: 360px) and (max-width: 969px) {
         flex-direction: column;

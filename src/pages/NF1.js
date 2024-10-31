@@ -12,6 +12,8 @@ const NF1 = () => {
             <br/>
 
             <PDiv>
+                <TextContainer>
+                    <TextInfo>
             <p>NFIB, also known as <b>neurofibromatosis</b>, contains 3 conditions: Neurofibromatosis type 1 (NF1), also known as von Recklinghausen disease, Neurofibromatosis type 2 (NF2) and Schwannomatosis (SWN).</p>
             
             <br/>
@@ -22,17 +24,22 @@ const NF1 = () => {
                 <br/>
                 <br/>
             Treatment focuses on supporting healthy growth and development in children and early management of complications. If NF1 causes large tumors or tumors that press on a nerve, surgery can reduce symptoms. A newer medicine is available to treat tumors in children, and other new treatments are being developed.</p>
+                    </TextInfo>
+                </TextContainer>
             </PDiv>
+            <br/>
+            <br/>
 
+            <PDiv>
+                <TextContainer>
+                    <TextInfo>
             <Div>
                 <h2>Symptoms and Treatment</h2>
             </Div>
             <br/>
-
-            <PDiv>
                 <H2>Symptoms</H2>
                 <br/>
-            <p>Neurofibromatosis type 1 (NF1) usually is diagnosed during childhood. Symptoms are seen at birth or shortly afterward and almost always by age 10. Symptoms tend to be mild to moderate, but they can vary from person to person.
+            <p>Neurofibromatosis type 1 (NF1) usually is diagnosed during childhood. Symptoms are seen at birth or shortly afterward and almost always by age 10. Symptoms tend to be mild to moderate, but they can vary from person to person.</p>
                 <br/>
                 <br/>
             <h3>Symptoms include:</h3>
@@ -76,9 +83,16 @@ const NF1 = () => {
                 </li>
             </ul>
             </List>
+                    </TextInfo>
+                </TextContainer>
             <br/>
             <br/>
-            <H2>Treatment</H2>
+
+            <TextContainer>
+                <TextInfo>
+                    <Div>
+                    <H2>Treatment</H2>
+                    </Div>
             <br/>
             There isn't a cure for neurofibromatosis type 1 (NF1), but symptoms can be managed. Generally, the sooner someone is under the care of a specialist trained in treating NF1, the better the outcome.
             <br/>
@@ -140,8 +154,10 @@ const NF1 = () => {
             <br/>
             <H3>Potential future treatments</H3>
             <br/>
-            Researchers are testing gene therapies for neurofibromatosis type 1 (NF1). Potential new treatments could include replacing the NF1 gene to restore the function of neurofibromin.
+            <p>Researchers are testing gene therapies for neurofibromatosis type 1 (NF1). Potential new treatments could include replacing the NF1 gene to restore the function of neurofibromin.
             </p>
+                </TextInfo>
+            </TextContainer>
             </PDiv>
         </ParentContainer>
         </>
@@ -156,7 +172,7 @@ const ParentContainer = styled.div`
 
 const Div = styled.div`
     text-align: center;
-    text-decoration: underline;
+    font-weight: bold;
 `
 
 const H2 = styled.h2`
@@ -175,4 +191,25 @@ const PDiv = styled.div`
 const List = styled.div`
     text-align: justify;
     margin: 0 40px;
+`
+
+const TextContainer = styled.div`
+    display: flex;
+    border-color: black;
+    border-radius: 10px;
+    text-align: justify;
+    margin: 0 20px 40px 20px;
+    line-height: 1.4em;
+`
+
+const TextInfo = styled.div`
+    border-color: black;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px 0 #1d4ed8;
+    background-color: #D2DCF1;
+    color: black;
+    width: max-content;
+    padding: 15px;
+    line-height: 2em;
+    font-size: 1.1em;
 `

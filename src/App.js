@@ -9,12 +9,14 @@ import NF1Team from "./pages/NF1Team";
 import PastProjects from "./pages/PastProjects";
 import NewsAndEvents from "./pages/NewsAndEvents";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 import styled from 'styled-components';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
         <Navbar />
         <PageSpacing />
           <Routes>
